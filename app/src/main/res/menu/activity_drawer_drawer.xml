@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/ic_library_music_black_24dp"
+            android:title="Mijn Evenementen" />
+        <item
+            android:id="@+id/nav_artist"
+            android:icon="@drawable/ic_music_note_black_24dp"
+            android:title="Favoriete Artiesten" />
+
+    </group>
+
+</menu>

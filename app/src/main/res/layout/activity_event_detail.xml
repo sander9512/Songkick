@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DrawerActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name_id"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="Name"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp" />
+
+    <TextView
+    android:id="@+id/type_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Type"
+    android:gravity="center"
+        android:layout_marginBottom="10dp"
+    android:textSize="20dp"
+        android:textStyle="italic|bold"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/date_time_id"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:text="Date + Time"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/venue_city_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Venue + City"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Optredens"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+
+
+    <ListView
+        android:id="@+id/event_detail_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.99"
+        />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DrawerActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/search_artist__id"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Zoek artiest"/>
+
+
+        <Button
+            android:id="@+id/button_artist_id"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Zoek" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/artists_row_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_weight="0.99" />
+</LinearLayout>
